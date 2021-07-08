@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CatDog Adoção</title>
+  <!-- Estilos -->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity=""
+    crossorigin="anonymous">
+    <link href="./header.html" rel="import"/>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+  </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+  <script>$(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });</script>
+
+</head>
+
+<body>
+  <div id="header"></div> 
+  <main>
+    <div id="logreg-forms">
+      <form role="form" onsubmit="signUp(event)">
+        <h1 class="display-6 fw-bold lh-1 mb-3 titulo-login" style="text-align: center"> Acesse sua Conta</h1>
+        <input type="email" id="email" class="form-control" placeholder="Endereço de Email" required=""
+          autofocus="">
+        <input type="password" id="pass" class="form-control" placeholder="Senha" required="">
+
+        <button class="btn-login" type="submit"><i class="fas fa-sign-in-alt"></i> Entrar</button>
+        <a href="#" id="forgot_pswd">Esqueceu a senha?</a>
+        <hr>
+        <div class="social-login">
+          <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Entre com o
+              Facebook</span> </button>
+          <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google"></i> Entre com o
+              Google</span> </button>
+        </div>
+        <hr>
+        <a href="cadastro.html"><button class="btn-cadastro" type="submit" id="btn-signup"><i
+              class="fas fa-user-plus"></i> Criar nova conta</button></a>
+      </form>
+    </div>
+  </main>
+
+  <div id="footer"></div> 
+</body>
+
+</html>

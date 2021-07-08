@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CatDog Adoção</title>
+    <!-- Estilos -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./header.html" rel="import" />
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    </body>
+    <script>$(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });</script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <section class="container-fluid d-flex justify-content-center">
+            <div class="row col-md-6">
+                <div class="dados-cadastrais mt-5 pb-5">
+                    <form>
+                        <h2 class="display-6 fw-bold lh-1 mb-3 titulo-form-cadastro">Atualizar dados cadastrais</h2>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1"
+                                class="form-label text-form-cadastro text-form-cadastro">Nome</label>
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1"
+                                class="form-label text-form-cadastro text-form-cadastro">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1"
+                                class="form-label text-form-cadastro text-form-cadastro">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1"
+                                class="form-label text-form-cadastro text-form-cadastro">Endereço</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                                <label for="exampleInputEmail1"
+                                    class="form-label text-form-cadastro text-form-cadastro">Número</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="exampleInputEmail1"
+                                    class="form-label text-form-cadastro text-form-cadastro">Complemento</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="exampleInputEmail1"
+                                class="form-label text-form-cadastro text-form-cadastro">CEP</label>
+                            <input type="text" class="form-control" placeholder="_____-___">
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-md-4">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Estado</option>
+                                    <option value="1">Acre (AC)
+                                    </option>
+                                    <option value="2">Alagoas (AL)
+                                    </option>
+                                    <option value="3">Amapá (AP)
+                                    </option>
+                                    <option value="4">Amazonas (AM)
+                                    </option>
+                                    <option value="5">Bahia (BA)
+                                    </option>
+                                    <option value="6">Ceará (CE)
+                                    </option>
+                                    <option value="7">Distrito Federal (DF)
+                                    </option>
+                                    <option value="8">Espírito Santo (ES)
+                                    </option>
+                                    <option value="9">Goiás (GO)
+                                    </option>
+                                    <option value="10">Maranhão (MA)
+                                    </option>
+                                    <option value="11">Mato Grosso (MT)
+                                    </option>
+                                    <option value="12">Mato Grosso do Sul (MS)
+                                    </option>
+                                    <option value="13">Minas Gerais (MG)
+                                    </option>
+                                    <option value="14">Pará (PA)
+                                    </option>
+                                    <option value="15">Paraíba (PB)
+                                    </option>
+                                    <option value="16">Paraná (PR)
+                                    </option>
+                                    <option value="17">Pernambuco (PE)
+                                    </option>
+                                    <option value="18">Piauí (PI)
+                                    </option>
+                                    <option value="19">Rio de Janeiro (RJ)
+                                    </option>
+                                    <option value="20">Rio Grande do Norte (RN)
+                                    </option>
+                                    <option value="21">Rio Grande do Sul (RS)
+                                    </option>
+                                    <option value="22">Rondônia (RO)
+                                    </option>
+                                    <option value="23">Roraima (RR)
+                                    </option>
+                                    <option value="24">Santa Catarina (SC)
+                                    </option>
+                                    <option value="25">São Paulo (SP)
+                                    </option>
+                                    <option value="26">Sergipe (SE)
+                                    </option>
+                                    <option value="27">Tocantins (TO)
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-md-8">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Município</option>
+                                    <option value="1">Município 1</option>
+                                    <option value="2">Município 2</option>
+                                    <option value="3">Município 3</option>
+                                    <option value="4">Município 4</option>
+                                    <option value="5">Município 5</option>
+                                    <option value="6">Município 6</option>
+                                    <option value="7">Município 7</option>
+                                    <option value="8">Município 8</option>
+                                    <option value="9">Município 9</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-salvar col-md-3 mt-3">Salvar</button>
+                    </form>
+                </div>
+                <div class="dados-login my-4 pb-5">
+                    <form>
+                        <h2 class="display-6 fw-bold lh-1 mb-3 titulo-form-cadastro">Atualizar senha</h2>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1"
+                                class="form-label text-form-cadastro text-form-cadastro">Senha atual</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1"
+                                class="form-label text-form-cadastro text-form-cadastro">Senha nova</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1"
+                                class="form-label text-form-cadastro text-form-cadastro">Senha repetir senha
+                                nova</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-salvar col-md-3 mt-3">Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>

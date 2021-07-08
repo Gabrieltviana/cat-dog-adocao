@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CatDog Adoção</title>
+    <!-- Estilos -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./header.html" rel="import"/>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+  </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+  <script>$(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });</script>
+
+</head>
+
+<body>
+    <div id="header"></div> 
+
+    <main>
+        <div class="row g-5 justify-content-center my-1">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-form-cadastro">Seu carrinho</span>
+                    <span class="badge bg-car rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Osso de borracha</h6>
+                            <small class="text-muted">Ossinho de borracha vermelho</small>
+                        </div>
+                        <span class="text-muted">R$ 14,30</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Vasilha para ração</h6>
+                            <small class="text-muted">Vasilha para ração azul</small>
+                        </div>
+                        <span class="text-muted">R$ 11,60</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Guia e peitoral</h6>
+                            <small class="text-muted">Kit com Guia e peitoral estampado</small>
+                        </div>
+                        <span class="text-muted">R$ 59,90</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">Código promocional</h6>
+                            <small>PROMO5</small>
+                        </div>
+                        <span class="text-success">− R$ 5,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (R$)</span>
+                        <strong>R$ 80,80</strong>
+                    </li>
+                </ul>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Código promocional">
+                        <button type="submit" class="btn btn-secondary">Resgatar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-7 col-lg-6">
+                <form >
+                    <h2 class="display-6 fw-bold lh-1 mb-4 titulo-form-cadastro">Endereço de entrega</h2>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1"
+                            class="form-label text-form-cadastro">Nome</label>
+                        <input type="text" class="form-control" required="required">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-form-cadastro">Sobrenome</label>
+                        <input type="text" class="form-control" required="required">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-form-cadastro">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-form-cadastro">Endereço</label>
+                        <input type="text" class="form-control" required="required">
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <label for="exampleInputEmail1" class="form-label text-form-cadastro">Número</label>
+                            <input type="text" class="form-control" required="required">
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="exampleInputEmail1" class="form-label text-form-cadastro">Complemento</label>
+                            <input type="text" class="form-control" required="required">
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="exampleInputEmail1" class="form-label text-form-cadastro">CEP</label>
+                        <input type="text" class="form-control" placeholder="_____-___" required="required">
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="exampleInputEmail1" class="form-label text-form-cadastro">Estado</label>
+                            <select class="form-select" aria-label="Default select example" required="required">
+                                <option selected></option>
+                                <option value="1">Acre (AC)
+                                </option>
+                                <option value="2">Alagoas (AL)
+                                </option>
+                                <option value="3">Amapá (AP)
+                                </option>
+                                <option value="4">Amazonas (AM)
+                                </option>
+                                <option value="5">Bahia (BA)
+                                </option>
+                                <option value="6">Ceará (CE)
+                                </option>
+                                <option value="7">Distrito Federal (DF)
+                                </option>
+                                <option value="8">Espírito Santo (ES)
+                                </option>
+                                <option value="9">Goiás (GO)
+                                </option>
+                                <option value="10">Maranhão (MA)
+                                </option>
+                                <option value="11">Mato Grosso (MT)
+                                </option>
+                                <option value="12">Mato Grosso do Sul (MS)
+                                </option>
+                                <option value="13">Minas Gerais (MG)
+                                </option>
+                                <option value="14">Pará (PA)
+                                </option>
+                                <option value="15">Paraíba (PB)
+                                </option>
+                                <option value="16">Paraná (PR)
+                                </option>
+                                <option value="17">Pernambuco (PE)
+                                </option>
+                                <option value="18">Piauí (PI)
+                                </option>
+                                <option value="19">Rio de Janeiro (RJ)
+                                </option>
+                                <option value="20">Rio Grande do Norte (RN)
+                                </option>
+                                <option value="21">Rio Grande do Sul (RS)
+                                </option>
+                                <option value="22">Rondônia (RO)
+                                </option>
+                                <option value="23">Roraima (RR)
+                                </option>
+                                <option value="24">Santa Catarina (SC)
+                                </option>
+                                <option value="25">São Paulo (SP)
+                                </option>
+                                <option value="26">Sergipe (SE)
+                                </option>
+                                <option value="27">Tocantins (TO)
+                                </option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label for="exampleInputEmail1" class="form-label text-form-cadastro">Cidade</label>
+                            <input type="text" class="form-control" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address" required="required">
+                        <label class="form-check-label" for="same-address">O endereço de cobrança é o mesmo do endereço
+                            de entrega.  </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label" for="save-info">Guardar informações para próxima compra.</label>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="display-6 fw-bold lh-1 mb-4 titulo-form-cadastro">Forma de pagamento</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                required>
+                            <label class="form-check-label" for="credit">Cartão de crédito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Cartão de débito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <label for="cc-name" class="form-label text-form-cadastro">Nome impresso no cartão</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-muted">Nome completo conforme exibido no cartão</small>
+                            <div class="invalid-feedback">
+                                Nome no cartão é obrigatório
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-number" class="form-label text-form-cadastro">Número do cartão</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                O número do cartão de crédito é obrigatório.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label text-form-cadastro">Vencimento</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Data de expiração necessária.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label text-form-cadastro">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Código de segurança necessário.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <button class="w-100 btn btn-salvar btn-lg mb-4" type="submit">Finalizar a compra</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div> 
+</body>
+
+</html>
