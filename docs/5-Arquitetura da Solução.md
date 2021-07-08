@@ -37,15 +37,3 @@ Em nosso projeto, iremos utilizar as seguintes tecnologias:
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
-
-## Hospedagem
-
-Heroku é uma plataforma em nuvem que permite que os desenvolvedores implantem e gerenciem aplicações. Nós a escolhemos por sua boa usabilidade e por ser totalmente gerenciada - assim não teremos preocupações com manutenção de servidores. Além disso, a plataforma oferece a opção de hospedagem grátis que é ideal para o nosso projeto que está sendo desenvolvido em ambiente escolar.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
